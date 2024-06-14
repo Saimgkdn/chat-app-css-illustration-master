@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.bg-color {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  z-index: 10;
+  width: 30%;
+  height: 650px;
+  background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+  border-radius: 0 0 250px 250px;
+}
+
+.bg-color-2 {
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  z-index: 10;
+  width: 30%;
+  height: 650px;
+  background-color: #ebeaea38;
+  border-radius: 250px 250px 0 0;
+}
+
+.container {
+  position: relative;
+  max-width: 950px;
+  height: 580px;
+  margin: 32px;
+  display: flex;
+  gap: 150px;
+  z-index: 50;
+}
+
+.phone-shadow {
+  box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+}
+
+.phone {
+  min-width: 300px;
+  background-color: hsl(270, 20%, 96%);
+  box-shadow: 0 0 0 15px #fff;
+  border-radius: 20px;
+}
+
+.header::before {
+  content: "";
+  width: 180px;
+  height: 36px;
+  border-radius: 40px;
+  background-color: #fff;
+  position: absolute;
+  display: flex;
+  transform: translate(60px, -15px);
+}
+
+.header {
+  position: relative;
+  background-image: linear-gradient(
+    to left,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  height: 80px;
+  border-radius: 20px 20px 8px 8px;
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+  padding-top: 38px;
+}
+
+.icon1 {
+  width: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.icon2 {
+  width: 20px;
+  margin-left: 110px;
+}
+
+.profil p {
+  font-size: 12px;
+  line-height: 0.5;
+  color: #ffffffe3;
+  font-weight: 500;
+}
+
+.profil span {
+  font-size: 8px;
+  color: #ffffff79;
+}
+
+.avatar {
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #ffffffc9;
+}
+
+.phone-text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.phone-text-left {
+  background-color: hsla(206, 7%, 79%, 0.4);
+  width: 65%;
+  border-radius: 10px 10px 10px 3px;
+  color: hsl(276, 55%, 52%);
+  font-size: 12px;
+  padding: 8px;
+  font-weight: 400;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.images img {
+  width: 50px;
+  border-radius: 10px;
+}
+
+.pr {
+  display: flex;
+  justify-content: end;
+}
+
+.phone-text-right {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px 10px 3px 10px;
+  width: 60%;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.rr {
+  width: 36%;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    hsl(293, 100%, 63%),
+    hsl(264, 100%, 61%)
+  );
+  width: 75%;
+  padding: 10px 10px;
+  border-radius: 10px 10px 10px 3px;
+}
+
+.price p {
+  font-size: 10px;
+  margin-left: 10px;
+  color: #ffffffde;
+}
+
+.s1 {
+  margin-left: 55px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.s2 {
+  margin-left: 75px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 500;
+  color: hsl(271, 36%, 24%);
+}
+
+.text p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: hsl(270, 7%, 64%);
+}
+
+input {
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 40px;
+  font-size: 12px;
+}
+
+input::placeholder {
+  color: hsl(206, 6%, 79%);
+}
+
+.message {
+  position: relative;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: hsl(271, 36%, 24%);
+  border-radius: 50px;
+  aspect-ratio: 1;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    max-width: min-content;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .phone-shadow {
+    width: 300px;
+  }
+
+  .text {
+    text-align: center;
+  }
+
+  .bg-color-2 {
+    display: none;
+  }
+
+  .bg-color {
+    left: -200px;
+    width: 80%;
+    height: 600px;
+  }
+}
